@@ -15,8 +15,8 @@ Installing and Running
 
 To install:
 
-    ./script/plugin install git://github.com/relevance/blue-ridge.git
-    ./script/generate blue_ridge
+    rails plugin install git://github.com/spraints/blue-ridge.git
+    rails generate blue_ridge:configure_blue_ridge
   
 To run all of the specs:
 
@@ -30,7 +30,7 @@ To run an individual spec file called "application_spec.js":
     
 To generate and run a spec for a JavaScript file called "public/javascripts/graphics.js" run:
 
-    ./script/generate javascript_spec graphics
+    rails generate blue_ridge:javascript_spec graphics
     rake test:javascripts TEST=graphics
 
 To run your spec inside a web browser, load the `HTML fixture` associated with the spec. (See below for more information on HTML fixtures and in-browser testing).
