@@ -1,9 +1,9 @@
 require 'rails/generators'
 
-require File.expand_path(File.dirname(__FILE__) + '/../../blue_ridge')
+require File.expand_path(File.dirname(__FILE__) + '/../../../blue_ridge')
 
-#module BlueRidge
-#  module Generators
+module BlueRidge
+  module Generators
     class JavascriptSpecGenerator < Rails::Generators::NamedBase
       def self.source_root
         @source_root ||= File.expand_path('../templates', __FILE__)
@@ -37,5 +37,5 @@ require File.expand_path(File.dirname(__FILE__) + '/../../blue_ridge')
         (class_name =~ /Spec$/) ? class_name.gsub(/Spec$/, "") : class_name
       end
     end
-#  end
-#end
+  end
+end
